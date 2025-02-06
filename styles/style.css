@@ -60,8 +60,6 @@ ol {
 
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
   inline-size: 1px;
@@ -96,8 +94,6 @@ ol {
 }
 
 .result__video-container {
-  position: relative;
-  position: relative;
   display: flex;
   flex-direction: start;
   position: relative;
@@ -135,11 +131,7 @@ fieldset > label {
 
 .search-form__fieldset-title {
   margin-bottom: 5px;
-  margin-bottom: 5px;
   font-family: 'Fira Sans Condensed', sans-serif;
-  font-weight: 400;
-  font-weight: 400;
-  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
@@ -265,9 +257,9 @@ fieldset > label {
 /* section.content__details */
 
 .content__details {
+  grid-area: details;
   display: flex;
   flex-direction: column;
-  grid-area: details;
   align-items: start;
   gap: 10px;
   width: 100%;
@@ -398,5 +390,4 @@ fieldset > label {
   padding: 6px 140px;
   outline: 1px solid white;
   outline-offset: 2px;
-  outline-offset: 1px;
 }
