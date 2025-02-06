@@ -1,0 +1,1 @@
+git@github.com:annamif-ux/posmotri-v-okno-fd.git

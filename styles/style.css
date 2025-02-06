@@ -85,6 +85,7 @@ ol {
 }
 
 /* section.result */
+
 .result {
   display: flex;
   flex-direction: column;
@@ -95,6 +96,7 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
   position: relative;
   display: flex;
   flex-direction: start;
@@ -125,15 +127,17 @@ ol {
 }
 
 /*Под вопросом*/
+
 fieldset > label {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
-  border-top: 1px solid white;
 }
 
 .search-form__fieldset-title {
   margin-bottom: 5px;
+  margin-bottom: 5px;
   font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -259,6 +263,7 @@ fieldset > label {
 }
 
 /* section.content__details */
+
 .content__details {
   display: flex;
   flex-direction: column;
