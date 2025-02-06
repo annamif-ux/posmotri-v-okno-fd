@@ -179,6 +179,8 @@ fieldset > label {
   flex-direction: row;
   align-items: center;
   width: fit-content;
+  gap: 5px;
+  cursor: pointer;
 }
 
 .search-form__label-text:hover {
@@ -211,12 +213,6 @@ fieldset > label {
 .search-form__textfield:active {
   outline: 1px solid white;
   outline-offset: 0px;
-}
-
-.search-form__label {
-  align-items: center;
-  gap: 5px;
-  cursor: pointer;
 }
 
 .search-form__submit-button {
