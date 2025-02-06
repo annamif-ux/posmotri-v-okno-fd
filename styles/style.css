@@ -77,7 +77,6 @@ ol {
   justify-content: space-between;
   align-items: end;
   gap: 30px;
-  grid-template-areas: "result details";
   max-height: 534px;
   overflow-y: auto;
 }
@@ -130,7 +129,6 @@ fieldset > label {
 }
 
 .search-form__fieldset-title {
-  margin-bottom: 5px;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -211,7 +209,6 @@ fieldset > label {
 }
 
 .search-form__textfield:active {
-  outline: none;
   outline: 1px solid white;
   outline-offset: 0px;
 }
