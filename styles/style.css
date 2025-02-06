@@ -9,13 +9,19 @@ html {
 }
 
 .page {
-  inline-size: 1200px;
-  block-size: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
   margin: auto;
+  padding: 0px 30px;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
   font-size: 18px;
+  text-align: left;
   background-color: #1b1919;
+  inline-size: 1200px;
+  block-size: 100%;
 }
 
 h1,
@@ -48,4 +54,344 @@ ol {
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
+}
+
+/*паттерн из задания*/
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
+} 
+
+/* лэйаут задание */
+
+.content {
+  display: grid;
+  grid-template-columns: 711px 399px;
+  grid-template-areas: "result details";
+  justify-content: space-between;
+  align-items: end;
+  gap: 30px;
+  grid-template-areas: "result details";
+  max-height: 534px;
+  overflow-y: auto;
+}
+
+/* section.result */
+.result {
+  display: flex;
+  flex-direction: column;
+  grid-area: result;
+  justify-content: flex-end;
+  width: 100%;
+  height: 456px;
+}
+
+.result__video-container {
+  position: relative;
+  display: flex;
+  flex-direction: start;
+  position: relative;
+  max-width: 711px;
+  max-height: 386px;
+  margin-bottom: 10px;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.search-form {
+  display: flex;
+  align-items: start;
+  gap: 40px;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__fieldset:nth-of-type(2) {
+  width: 212px;
+}
+
+/*Под вопросом*/
+fieldset > label {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.search-form__fieldset-title {
+  margin-bottom: 5px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  margin-bottom: 5px;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-form__pseudo-checkbox {
+  display: flex;
+  flex-direction: row;
+  width: 19px;
+  height: 19px;
+  margin-right: 1px;
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+.search-form__pseudo-checkbox:hover {
+  cursor: pointer;
+}
+
+.search-form__pseudo-checkbox:focus {
+  border: 1px solid white;
+  outline-offset: 1px;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
+  content: '';
+  position: relative;
+  inset: 0;
+  display: block;
+  margin: 1px;
+  background-color: white;
+  inline-size: 15px;
+  block-size: 15px;
+}
+
+.search-form__label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+}
+
+.search-form__label-text:hover {
+  text-decoration: underline;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid white;
+  outline-offset: 1px;
+}
+
+.search-form__textfield {
+  width: 225px;
+  border: 1px solid #fff;
+  border-right-color: transparent;
+  border-left-color:transparent;
+  padding: 1px 0;
+  color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: transparent;
+  appearance: none;
+}
+
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__textfield:active {
+  outline: none;
+  outline: 1px solid white;
+  outline-offset: 0px;
+}
+
+.search-form__label {
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  height: 34px;
+}
+
+.button {
+  margin-top: 20px;
+  border: 1px solid white;
+  color: white;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.button:active {
+  text-decoration: none;
+  background-color: #545050;
+}
+
+.button:focus-visible {
+  outline: 1px solid white;
+  outline-offset: 2px;
+}
+
+/* section.content__details */
+.content__details {
+  display: flex;
+  flex-direction: column;
+  grid-area: details;
+  align-items: start;
+  gap: 10px;
+  width: 100%;
+  max-height: 534px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.title {
+  margin-top: 18px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list-container {
+  position: relative;
+  width: 399px;
+  height: 298px;
+  padding: 3px;
+  overflow-y: auto;
+}
+
+.content__list-container::-webkit-scrollbar {
+  display: none;
+}
+
+.content__list > * {
+  margin-bottom: 30px;
+}
+
+.content__list > *:last-child {
+  margin-bottom: 0;
+}
+
+.content__list-container:not(:last-child) {
+  max-height: 298px;
+  overflow: auto;
+}
+
+.content__list-item {
+  margin-right: 3px;
+  margin-left: 3px;
+}
+
+.content__card-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.content__video-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+
+.content__video-card:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-position: under;
+  cursor: pointer;
+}
+
+.content__video-card:active {
+  background-color: #545050;
+}
+
+.content__video-card:focus {
+  outline: 1px solid #fff;
+}
+
+.content__video-card:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.content__video-card-description-container {
+  display: block;
+  max-height: 53px;
+}
+
+.content__video-card-title {
+  max-width: 198px;
+  overflow: hidden;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.content__video-card-description {
+  overflow: hidden;
+  color: white;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 90%;
+  text-decoration: none;
+}
+
+.content__video-card-thumbnail {
+  inline-size: 194px;
+  block-size: 103px;
+}
+
+.more-button {
+  height: 34px;
+  inline-size: 100%;
+}
+
+.more-button {
+  outline: 0;
+}
+
+.more-button:focus-visible {
+  padding: 6px 140px;
+  outline: 1px solid white;
+  outline-offset: 2px;
+  outline-offset: 1px;
 }
