@@ -77,8 +77,8 @@ ol {
   justify-content: space-between;
   align-items: end;
   gap: 30px;
-  max-height: 534px;
   overflow-y: auto;
+  /*padding возможно понадобятся*/
 }
 
 /* section.result */
@@ -94,7 +94,7 @@ ol {
 
 .result__video-container {
   display: flex;
-  flex-direction: start;
+  flex-direction: row;
   position: relative;
   max-width: 711px;
   max-height: 386px;
@@ -256,9 +256,9 @@ fieldset > label {
   align-items: start;
   gap: 10px;
   width: 100%;
-  max-height: 534px;
   overflow-y: auto;
   scrollbar-width: none;
+  /*использовать padding*/
 }
 
 .title {
@@ -356,7 +356,6 @@ fieldset > label {
 }
 
 .content__video-card-description {
-  overflow: hidden;
   color: white;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
@@ -368,14 +367,12 @@ fieldset > label {
 .content__video-card-thumbnail {
   inline-size: 194px;
   block-size: 103px;
+  object-fit: cover;
 }
 
 .more-button {
   height: 34px;
   inline-size: 100%;
-}
-
-.more-button {
   outline: 0;
 }
 
