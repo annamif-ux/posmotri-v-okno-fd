@@ -180,6 +180,9 @@ fieldset > label {
   align-items: center;
   width: fit-content;
   gap: 5px;
+}
+
+.search-form__label:hover {
   cursor: pointer;
 }
 
@@ -190,6 +193,11 @@ fieldset > label {
 .search-form__label:has(:focus-visible) {
   outline: 1px solid white;
   outline-offset: 1px;
+}
+
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 .search-form__textfield {
@@ -258,7 +266,7 @@ fieldset > label {
   width: 100%;
   overflow-y: auto;
   scrollbar-width: none;
-  /*использовать padding ???*/
+  /*padding возможно понадобится*/
 }
 
 .title {
@@ -308,6 +316,10 @@ fieldset > label {
   display: block;
   color: white;
   text-decoration: none;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
 
 .content__video-card {
