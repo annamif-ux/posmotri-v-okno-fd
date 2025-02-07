@@ -77,8 +77,7 @@ ol {
   justify-content: space-between;
   align-items: end;
   gap: 30px;
-  overflow-y: auto;
-  /*padding возможно понадобятся*/
+  /*padding возможно понадобится*/
 }
 
 /* section.result */
@@ -259,7 +258,7 @@ fieldset > label {
   width: 100%;
   overflow-y: auto;
   scrollbar-width: none;
-  /*использовать padding*/
+  /*использовать padding ???*/
 }
 
 .title {
@@ -280,7 +279,6 @@ fieldset > label {
   position: relative;
   width: 399px;
   height: 298px;
-  padding: 3px;
   overflow-y: auto;
 }
 
