@@ -295,11 +295,6 @@ fieldset > label {
   margin-bottom: 0;
 }
 
-.content__list-container: {
-  max-height: 298px;
-  overflow: auto;
-}
-
 .content__list-item {
   margin-right: 3px;
   margin-left: 3px;
